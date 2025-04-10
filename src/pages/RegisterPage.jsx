@@ -24,7 +24,7 @@ function RegisterPage() {
       );
 
       // Auto-login after registration
-      const res = await axios.post(`${process.env.BASE_URL}/api/auth/login`, {
+      const res = await axios.post("https://seat-booking-system-backend.onrender.com/api/auth/login", {
         email,
         password,
       });
