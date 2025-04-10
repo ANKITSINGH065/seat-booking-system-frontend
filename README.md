@@ -26,6 +26,6 @@ This is the frontend application for the Seat Booking system. It allows users to
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-repo/seat-booking.git](https://github.com/ANKITSINGH065/seat-booking-system-frontend.git)
+   git clone https://github.com/ANKITSINGH065/seat-booking-system-frontend.git
    cd seat-booking/frontend
    npm run start
