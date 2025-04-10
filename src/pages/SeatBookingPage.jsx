@@ -18,7 +18,9 @@ function SeatBookingPage() {
   const fetchData = async () => {
     setLoading(false);
     try {
-      const response = await axios.get("http://localhost:3000/api/seats");
+      const response = await axios.get(
+        "https://seat-booking-system-backend.onrender.com/api/seats"
+      );
       setLoading(true);
       setData(response.data.availableSeats);
     } catch (error) {

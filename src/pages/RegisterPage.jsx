@@ -14,14 +14,17 @@ function RegisterPage() {
 
   const handleRegister = async () => {
     try {
-      await axios.post("http://localhost:3000/api/auth/register", {
-        name,
-        email,
-        password,
-      });
+      await axios.post(
+        "https://seat-booking-system-backend.onrender.com/api/auth/register",
+        {
+          name,
+          email,
+          password,
+        }
+      );
 
       // Auto-login after registration
-      const res = await axios.post("http://localhost:3000/api/auth/login", {
+      const res = await axios.post(`${process.env.BASE_URL}/api/auth/login`, {
         email,
         password,
       });
